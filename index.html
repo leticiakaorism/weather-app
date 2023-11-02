@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyJoy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container document">
+      <div class="container logo-search">
+        <div class="row">
+          <div class="col-3">
+            <img src="images/logo.svg" alt="logo" class="logo-image" />
+            <h6>SkyJoy</h6>
+          </div>
+        </div>
+        <form id="city-form">
+          <div class="col-6">
+            <input
+              type="search"
+              placeholder="Type a city.."
+              autofocus="on"
+              autocomplete="off"
+              class="form-control shadow-sm"
+              id="city-input"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary shadow-sm"
+              id="button-search"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="container weather-today">
+        <div class="row">
+          <div class="col-6">
+            <h1 class="current-city">Sydney</h1>
+            <ul>
+              <li id="day-weather">Sunday, October 8, 2023</li>
+              <li id="hour-weather">Cloudy, 02:25</li>
+            </ul>
+            <div class="clear-fix">
+              <img
+                class="weather-icon float-start"
+                src="images/cloudy.svg"
+                alt="cloudy"
+              />
+              <div class="float-left">
+                <span class="temperature">19</span>
+                <span class="celsius">°C</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 weather-details shadow-sm">
+            <div class="row">
+              <div class="col-6">
+                Min. temperature <br />
+                9°
+              </div>
+              <div class="col-6">
+                Max. temperature <br />
+                28°
+              </div>
+              <div class="col-6">
+                Humidity <br />
+                58%
+              </div>
+              <div class="col-6">
+                Wind <br />
+                6km/h
+              </div>
+              <div class="col-6">
+                Sunrise <br />
+                6:21am
+              </div>
+              <div class="col-6">
+                Sunset <br />
+                7:03pm
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <p>This week</p>
+        <div class="row">
+          <div class="col-2">
+            <h5>Mon</h5>
+            <p>9° 28°</p>
+          </div>
+          <div class="col-2">
+            <h5>Tue</h5>
+            <p>12° 23°</p>
+          </div>
+          <div class="col-2">
+            <h5>Wed</h5>
+            <p>12° 27°</p>
+          </div>
+          <div class="col-2">
+            <h5>Thu</h5>
+            <p>12° 24°</p>
+          </div>
+          <div class="col-2">
+            <h5>Fri</h5>
+            <p>13° 30°</p>
+          </div>
+          <div class="col-2">
+            <h5>Sat</h5>
+            <p>9° 26°</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
